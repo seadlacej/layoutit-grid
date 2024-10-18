@@ -35,41 +35,78 @@ onUnmounted(() => removeEventListener('keydown', keyMonitor))
 <style lang="postcss">
 :root {
   /* Create Colors */
-  --color-green-main: #09AB56,
-  --color-green-50: #daf2e6,
-  --color-green-100: #ceeedd,
-  --color-green-200: #c2ead5,
-  --color-green-300: #9dddbb,
-  --color-green-400: #53c489,
-  --color-green-500: #09AB56,
-  --color-green-600: #089a4d,
-  --color-green-700: #078041,
-  --color-green-800: #056734,
-  --color-green-900: #04542a,
+  --color-turquoise-main: #08AC8F;
+  --color-turquoise-50: #daf2ee;
+  --color-turquoise-100: #ceeee8;
+  --color-turquoise-200: #c1eae3;
+  --color-turquoise-300: #9cddd1;
+  --color-turquoise-400: #52c4af;
+  --color-turquoise-500: #08AC8F;
+  --color-turquoise-600: #07997f;
+  --color-turquoise-700: #06806a;
+  --color-turquoise-800: #056655;
+  --color-turquoise-900: #045345;
 
-  --color-purple-main: #4D09AB,
-  --color-purple-50: #e4daf2,
-  --color-purple-100: #dbceee,
-  --color-purple-200: #d3c2ea,
-  --color-purple-300: #b89ddd,
-  --color-purple-400: #8253c4,
-  --color-purple-500: #4D09AB,
-  --color-purple-600: #45089a,
-  --color-purple-700: #3a0780,
-  --color-purple-800: #2e0567,
-  --color-purple-900: #260454,
 
-  --color-red-main: #AB0919,
-  --color-red-50: #f2ddda,
-  --color-red-100: #eed1ce,
-  --color-red-200: #eac6c2,
-  --color-red-300: #dda39d,
-  --color-red-400: #c45e53,
-  --color-red-500: #AB1909,
-  --color-red-600: #9a1708,
-  --color-red-700: #801307,
-  --color-red-800: #670f05,
-  --color-red-900: #540c04,
+  --color-green-main: #09AB56;
+  --color-green-50: #daf2e6;
+  --color-green-100: #ceeedd;
+  --color-green-200: #c2ead5;
+  --color-green-300: #9dddbb;
+  --color-green-400: #53c489;
+  --color-green-500: #09AB56;
+  --color-green-600: #089a4d;
+  --color-green-700: #078041;
+  --color-green-800: #056734;
+  --color-green-900: #04542a;
+
+  --color-purple-main: #4D09AB;
+  --color-purple-50: #e4daf2;
+  --color-purple-100: #dbceee;
+  --color-purple-200: #d3c2ea;
+  --color-purple-300: #b89ddd;
+  --color-purple-400: #8253c4;
+  --color-purple-500: #4D09AB;
+  --color-purple-600: #45089a;
+  --color-purple-700: #3a0780;
+  --color-purple-800: #2e0567;
+  --color-purple-900: #260454;
+
+  --color-red-main: #AB0919;
+  --color-red-50: #f2ddda;
+  --color-red-100: #eed1ce;
+  --color-red-200: #eac6c2;
+  --color-red-300: #dda39d;
+  --color-red-400: #c45e53;
+  --color-red-500: #AB1909;
+  --color-red-600: #9a1708;
+  --color-red-700: #801307;
+  --color-red-800: #670f05;
+  --color-red-900: #540c04;
+
+  --color-blue-main: #407ec9;
+  --color-blue-50: #e2ecf7;
+  --color-blue-100: #d9e5f4;
+  --color-blue-200: #cfdff2;
+  --color-blue-300: #b3cbe9;
+  --color-blue-400: #79a5d9;
+  --color-blue-500: #407ec9;
+  --color-blue-600: #3a71b5;
+  --color-blue-700: #305f97;
+  --color-blue-800: #264c79;
+  --color-blue-900: #1f3e62;
+
+  --color-yellow-main: #f6a117;
+  --color-yellow-50: #fef1dc;
+  --color-yellow-100: #fdecd1;
+  --color-yellow-200: #fde8c5;
+  --color-yellow-300: #fbd9a2;
+  --color-yellow-400: #f9bd5d;
+  --color-yellow-500: #f6a117;
+  --color-yellow-600: #dd9115;
+  --color-yellow-700: #b97911;
+  --color-yellow-800: #94610e;
+  --color-yellow-900: #794f0b;
 
   /* END Create Colors */
 
