@@ -47,6 +47,7 @@ import {
   parseValueUnit,
 } from '../../store.js'
 import { useIsCurrentArea, useIsActiveArea } from '../../composables/area.js'
+import { $, $computed, $ref } from 'vue/macros'
 
 let { shift } = $(useMagicKeys())
 
@@ -194,7 +195,7 @@ function handleLineDown(event, { row, col }) {
   event.stopPropagation() // TODO: ...
   event.preventDefault()
   if (document.activeElement) {
-    document.activeElement.blur()
+    (document.activeElement as HTMLElement).blur()
   }
 
   if (dragging) {

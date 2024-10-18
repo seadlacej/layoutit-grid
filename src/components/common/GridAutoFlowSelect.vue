@@ -34,6 +34,7 @@ import IconFlowCol from '../icons/IconFlowCol.vue'
 import IconFlowDense from '../icons/IconFlowDense.vue'
 import IconFlowRow from '../icons/IconFlowRow.vue'
 import type { AutoFlowProperties } from '../../types'
+import { $computed } from 'vue/macros';
 
 const { modelValue = 'row' } = defineProps<{
   modelValue: AutoFlowProperties

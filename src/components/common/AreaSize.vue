@@ -27,6 +27,7 @@ import { unitMeasureMap } from '../../utils.js'
 //@ts-ignore
 import { inputSetter } from '../../composables'
 import type { AreaType, AreaState, ValueUnit, GridUnit } from '../../types'
+import { $computed } from 'vue/macros.js';
 
 const { area, type } = defineProps<{
   area: AreaState

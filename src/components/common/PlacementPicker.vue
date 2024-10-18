@@ -56,6 +56,7 @@ import IconAlignEnd from '../icons/IconAlignEnd.vue'
 import IconAlignAround from '../icons/IconAlignAround.vue'
 import IconAlignBetween from '../icons/IconAlignBetween.vue'
 import IconAlignEvenly from '../icons/IconAlignEvenly.vue'
+import { $computed } from 'vue/macros'
 
 const optionsContent = ['stretch', 'start', 'center', 'end', 'space-around', 'space-between', 'space-evenly']
 

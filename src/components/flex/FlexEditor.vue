@@ -12,10 +12,12 @@
 <script setup lang="ts">
 import { useAppState, deselectCurrentArea } from '../../store.js'
 import { useIsActiveArea } from '../../composables/area.js'
+import { $, $computed } from 'vue/macros';
 
 let { mainArea, currentArea } = $(useAppState())
 
-const { area } = defineProps<{ area }>()
+const props = defineProps<{ area }>()
+const { area } = props
 
 let flex = $computed(() => area.flex)
 

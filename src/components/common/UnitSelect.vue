@@ -29,7 +29,7 @@ const {
 
 const emit = defineEmits(['update:modelValue'])
 
-let options = $computed(() => units[type])
+let options = computed(() => units[type])
 
 const onInput = (event: Event) => {
   emit('update:modelValue', (event.target as HTMLInputElement).value)

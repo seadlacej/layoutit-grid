@@ -12,6 +12,7 @@
 </template>
 
 <script setup lang="ts">
+import { $ } from 'vue/macros';
 import { loadFromStorage, useAppState } from '../store.js'
 import { keyMonitor } from '../utils/keyMonitor'
 

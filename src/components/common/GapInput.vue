@@ -17,6 +17,7 @@
 import type { ValueGapUnit, DefaultUnit, Cell } from '../../types'
 //@ts-ignore
 import { parseValueUnit } from '../../store.js'
+import { $computed } from 'vue/macros';
 
 const { grid, type } = defineProps<{
   grid
