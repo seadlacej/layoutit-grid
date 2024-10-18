@@ -10,7 +10,7 @@
     <IconEdit />
   </button>-->
   <template v-if="!dragging && (currentArea === area || overArea === area)">
-    <button
+    <!-- <button
       v-show="!hasDisplay"
       aria-label="Add sub grid"
       class="btn-subgrid"
@@ -19,7 +19,7 @@
       @click="subGrid(area)"
     >
       <IconSubgrid />
-    </button>
+    </button> -->
     <!--button v-show="!hasDisplay" aria-label="Add flex" class="btn-subgrid" @click="subFlex(area)">
       <IconFlex />
     </button-->

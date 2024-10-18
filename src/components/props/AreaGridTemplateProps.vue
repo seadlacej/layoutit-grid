@@ -239,6 +239,7 @@ h2 {
 }
 
 .items-header {
+  background-color: var(--color-white);
   display: flex;
   justify-content: space-between;
   align-items: center;

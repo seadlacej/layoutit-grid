@@ -45,7 +45,7 @@
         <AreaFlexProps :area="area" />
       </PropsAccordionItem>
 
-      <PropsAccordionItem
+      <!-- <PropsAccordionItem
         v-if="area.parent && area.parent.display === 'grid'"
         name="self-grid"
         heading="Self Placement"
@@ -53,7 +53,7 @@
         :independent="true"
       >
         <AreaSelfGridProps :area="area" />
-      </PropsAccordionItem>
+      </PropsAccordionItem> -->
 
       <PropsAccordionItem
         v-if="area.parent && area.parent.display === 'flex'"

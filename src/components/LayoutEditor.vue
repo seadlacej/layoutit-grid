@@ -34,6 +34,46 @@ onUnmounted(() => removeEventListener('keydown', keyMonitor))
 
 <style lang="postcss">
 :root {
+  /* Create Colors */
+  --color-green-main: #09AB56,
+  --color-green-50: #daf2e6,
+  --color-green-100: #ceeedd,
+  --color-green-200: #c2ead5,
+  --color-green-300: #9dddbb,
+  --color-green-400: #53c489,
+  --color-green-500: #09AB56,
+  --color-green-600: #089a4d,
+  --color-green-700: #078041,
+  --color-green-800: #056734,
+  --color-green-900: #04542a,
+
+  --color-purple-main: #4D09AB,
+  --color-purple-50: #e4daf2,
+  --color-purple-100: #dbceee,
+  --color-purple-200: #d3c2ea,
+  --color-purple-300: #b89ddd,
+  --color-purple-400: #8253c4,
+  --color-purple-500: #4D09AB,
+  --color-purple-600: #45089a,
+  --color-purple-700: #3a0780,
+  --color-purple-800: #2e0567,
+  --color-purple-900: #260454,
+
+  --color-red-main: #AB0919,
+  --color-red-50: #f2ddda,
+  --color-red-100: #eed1ce,
+  --color-red-200: #eac6c2,
+  --color-red-300: #dda39d,
+  --color-red-400: #c45e53,
+  --color-red-500: #AB1909,
+  --color-red-600: #9a1708,
+  --color-red-700: #801307,
+  --color-red-800: #670f05,
+  --color-red-900: #540c04,
+
+  /* END Create Colors */
+
+
   /* Green */
   --color-add-active: #50b83c;
   --color-darkmode-active: #27ae60;
@@ -135,7 +175,7 @@ p {
   color: var(--color-blue-darkest);
   background: linear-gradient(var(--color-purple-darkest), var(--color-purple-dark));
   background: var(--color-purple-dark);
-  background: var(--color-gray-darkest);
+  background: var(--color-gray-lightest);
   height: 100%;
   display: flex;
   &.darkmode {
