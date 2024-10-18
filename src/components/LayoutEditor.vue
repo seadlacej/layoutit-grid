@@ -124,11 +124,11 @@ p {
 
 /* TODO: Try to remove this
    The right border produces a jump when active without this */
-#app.darkmode > .grid {
+#grid-layout-creator.darkmode > .grid {
   padding-right: 1px;
 }
 
-#app {
+#grid-layout-creator {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: var(--color-blue-darkest);

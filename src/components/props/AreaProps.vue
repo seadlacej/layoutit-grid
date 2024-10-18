@@ -19,12 +19,12 @@
           :accordion="accordion"
         >
           <AreaGridTemplateProps :area="area" />
-          <AreaGridGapProps :area="area" />
+          <!-- <AreaGridGapProps :area="area" /> -->
         </PropsAccordionItem>
-        <PropsAccordionItem name="implicit-grid" heading="Implicit Grid" :independent="true" :accordion="accordion">
+        <!-- <PropsAccordionItem name="implicit-grid" heading="Implicit Grid" :independent="true" :accordion="accordion">
           <AreaGridImplicitProps :area="area" />
-        </PropsAccordionItem>
-        <PropsAccordionItem
+        </PropsAccordionItem> -->
+        <!-- <PropsAccordionItem
           name="grid-items-placement"
           heading="Grid Placement"
           :independent="true"
@@ -32,7 +32,7 @@
         >
           <AreaGridItemsPlacementProps :area="area" />
           <AreaGridContentPlacementProps :area="area" />
-        </PropsAccordionItem>
+        </PropsAccordionItem> -->
       </template>
 
       <PropsAccordionItem
@@ -65,9 +65,9 @@
         <AreaSelfFlexProps :area="area" />
       </PropsAccordionItem>
 
-      <PropsAccordionItem name="area-box" :independent="true" heading="Area Box" :accordion="accordion">
+      <!-- <PropsAccordionItem name="area-box" :independent="true" heading="Area Box" :accordion="accordion">
         <AreaBoxProps :area="area" />
-      </PropsAccordionItem>
+      </PropsAccordionItem> -->
 
       <!--
       <PropsAccordionItem

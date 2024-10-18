@@ -4,6 +4,8 @@ export { parseValue, parseUnit }
 // @ts-ignore
 export { validGridUnits, parseValueUnit, isValidTrackSize } from '../utils/grid.js'
 import { GridDimension, GridState, LineName, ValueUnit, GridUnit } from '../types'
+import { ref } from 'vue'
+import { EventBus } from './eventBus'
 
 export function gridTemplateToArr(str: string): string[] {
   return str.split(/(?!\(.*)\s(?![^(]*?\))/g)
@@ -68,7 +70,7 @@ export function createGridState({
   justifyContent = 'initial',
   alignContent = 'initial',
   justifyItems = 'initial',
-  alignItems = 'initial'
+  alignItems = 'initial',
 } = {}): GridState {
   return {
     row,
@@ -207,4 +209,25 @@ export function parseGridTemplate(templateStr: string) {
   }
 
   return [templateArr, lineNames]
+}
+
+export const htmlCssState = ref({
+  html: '',
+  css: '',
+})
+
+export const useHtmlCssState = () => {
+  const setHtmlCssState = (html, css) => {
+    htmlCssState.value = { html, css }
+    EventBus.value.dispatchEvent(
+      new CustomEvent('layoutStateUpdated', {
+        detail: htmlCssState.value,
+      })
+    )
+  }
+
+  return {
+    htmlCssState,
+    setHtmlCssState,
+  }
 }

@@ -19,7 +19,8 @@
     "types": [
       "vite/client",
       "vite-plugin-pwa/client"
-    ]
+    ],
+    "outDir": "./dist",
   },
   "include": [
     "src/**/*.ts",

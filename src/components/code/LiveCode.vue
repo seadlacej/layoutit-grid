@@ -11,7 +11,7 @@
       <SidebarButton aria-label="Restart" class="btn-trash" title="Restart" @click="restart">
         <IconRefresh />
       </SidebarButton>
-      <SidebarButton
+      <!-- <SidebarButton
         :disabled="!saveDesign"
         class="btn-link"
         title="Get Shareable Link"
@@ -19,21 +19,22 @@
         @click="getPermalink"
       >
         <IconLink />
-      </SidebarButton>
+      </SidebarButton> -->
     </div>
     <div class="buttons">
-      <CodepenButton :area="area" :options="options" />
-      <CodeSanboxButton :area="area" :options="options" />
-      <StackblitzButton :area="area" :options="options" />
+      <UpdateCodeButton :area="area" :options="options" />
+      <!-- <CodepenButton :area="area" :options="options" /> -->
+      <!-- <CodeSanboxButton :area="area" :options="options" />
+      <StackblitzButton :area="area" :options="options" /> -->
     </div>
   </div>
-  <div style="height: 100%">
+  <!-- <div style="height: 100%">
     <HtmlCodeEditor :area="area" :options="options" />
     <div class="code-options-container">
       <CssCodeEditor :area="area" :options="options" />
       <LiveCodeOptions v-model="options" />
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script setup lang="ts">

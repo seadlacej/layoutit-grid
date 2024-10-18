@@ -27,7 +27,7 @@
         >
           <IconRemove />
         </OptionsButton>
-        <OptionsButton
+        <!-- <OptionsButton
           v-show="area.display !== 'block'"
           :disabled="!area.parent"
           class="remove-button clear"
@@ -35,15 +35,15 @@
           @click="clearArea(area)"
         >
           <IconClear />
-        </OptionsButton>
-        <OptionsButton
+        </OptionsButton> -->
+        <!-- <OptionsButton
           v-show="area.display === 'grid'"
           class="add-area-button"
           title="Add implicit element to this grid area"
           @click="addImplicitArea(area)"
         >
           <IconAdd />
-        </OptionsButton>
+        </OptionsButton> -->
       </div>
     </h1>
   </div>

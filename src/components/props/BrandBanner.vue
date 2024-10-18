@@ -1,6 +1,5 @@
 <template>
   <div class="version-container">
-    <HireUs />
   </div>
 </template>
 
