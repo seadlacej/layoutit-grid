@@ -1,0 +1,10 @@
+{
+  "columns.label": "Spalten",
+  "rows.label": "Reihen",
+  "add.button.label": "Hinzufügen",
+  "grid.panel.header": "Grid Behälter",
+  "children.panel.header": "Zellen",
+  "grid.cell.placeholder": "Bereichsname",
+  "grid.cell.saveBtn.label": "Speichern",
+  "useLayoutBtn.label": "Layout benutzen"
+}

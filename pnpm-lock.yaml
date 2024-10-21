@@ -22,6 +22,9 @@ dependencies:
   vue-global-api:
     specifier: ^0.2.4
     version: 0.2.4(vue@3.2.29)
+  vue-i18n:
+    specifier: '9'
+    version: 9.14.1(vue@3.2.29)
   vue-resizable:
     specifier: ^2.0.5
     version: 2.0.5(vue@3.2.29)
@@ -1304,7 +1307,7 @@ packages:
       webpack-dev-server: '>=3.0.0'
     dependencies:
       debug: 4.3.3(supports-color@8.1.1)
-      html-webpack-plugin: 5.6.0(acorn@8.13.0)(webpack@5.95.0)
+      html-webpack-plugin: 5.6.0(webpack@5.95.0)
       semver: 7.3.5
       webpack: 5.95.0
       webpack-dev-server: 5.1.0(webpack@5.95.0)
@@ -1369,6 +1372,27 @@ packages:
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
+
+  /@intlify/core-base@9.14.1:
+    resolution: {integrity: sha512-rG5/hlNW6Qfve41go37szEf0mVLcfhYuOu83JcY0jZKasnwsrcZYYWDzebCcuO5I/6Sy1JFWo9p+nvkQS1Dy+w==}
+    engines: {node: '>= 16'}
+    dependencies:
+      '@intlify/message-compiler': 9.14.1
+      '@intlify/shared': 9.14.1
+    dev: false
+
+  /@intlify/message-compiler@9.14.1:
+    resolution: {integrity: sha512-MY8hwukJBnXvGAncVKlHsqKDQ5ZcQx4peqEmI8wBUTXn4pezrtTGYXNoz81cLyEEHB+L/zlKWVBSh5TiX4gYoQ==}
+    engines: {node: '>= 16'}
+    dependencies:
+      '@intlify/shared': 9.14.1
+      source-map-js: 1.0.2
+    dev: false
+
+  /@intlify/shared@9.14.1:
+    resolution: {integrity: sha512-XjHu6PEQup9MnP1x0W9y0nXXfq9jFftAYSfV11hryjtH4XqXP8HrzMvXI+ZVifF+jZLszaTzIhvukllplxTQTg==}
+    engines: {node: '>= 16'}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.5:
     resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
@@ -1906,6 +1930,10 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.29
       '@vue/shared': 3.2.29
+
+  /@vue/devtools-api@6.6.4:
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
+    dev: false
 
   /@vue/eslint-config-typescript@7.0.0(@typescript-eslint/eslint-plugin@4.33.0)(@typescript-eslint/parser@4.33.0)(eslint-plugin-vue@7.20.0)(eslint@7.32.0)(typescript@4.5.5):
     resolution: {integrity: sha512-UxUlvpSrFOoF8aQ+zX1leYiEBEm7CZmXYn/ZEM1zwSadUzpamx56RB4+Htdjisv1mX2tOjBegNUqH3kz2OL+Aw==}
@@ -4092,7 +4120,7 @@ packages:
     resolution: {integrity: sha512-K//PSRMQk4FZ78Kyau+mZurHn3FH0Vwr+H36eE0rPbeYkRRi9YxceYPhuN60UwWorxyKHhqoAJl2OFKa4BVtaA==}
     dev: true
 
-  /html-minifier-terser@6.1.0(acorn@8.13.0):
+  /html-minifier-terser@6.1.0:
     resolution: {integrity: sha512-YXxSlJBZTP7RS3tWnQw74ooKa6L9b9i9QYXY21eUEvhZ3u9XLfv6OnFsQq6RxkhHygsaUMvYsZRV5rU/OVNZxw==}
     engines: {node: '>=12'}
     hasBin: true
@@ -4103,12 +4131,10 @@ packages:
       he: 1.2.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.10.0(acorn@8.13.0)
-    transitivePeerDependencies:
-      - acorn
+      terser: 5.36.0
     dev: true
 
-  /html-webpack-plugin@5.6.0(acorn@8.13.0)(webpack@5.95.0):
+  /html-webpack-plugin@5.6.0(webpack@5.95.0):
     resolution: {integrity: sha512-iwaY4wzbe48AfKLZ/Cc8k0L+FKG6oSNRaZ8x5A/T/IVDGyXcbHncM9TdDa93wn0FsSm82FhTKW7f3vS61thXAw==}
     engines: {node: '>=10.13.0'}
     peerDependencies:
@@ -4121,13 +4147,11 @@ packages:
         optional: true
     dependencies:
       '@types/html-minifier-terser': 6.1.0
-      html-minifier-terser: 6.1.0(acorn@8.13.0)
+      html-minifier-terser: 6.1.0
       lodash: 4.17.21
       pretty-error: 4.0.0
       tapable: 2.2.1
       webpack: 5.95.0
-    transitivePeerDependencies:
-      - acorn
     dev: true
 
   /htmlparser2@6.1.0:
@@ -4653,7 +4677,7 @@ packages:
     dependencies:
       universalify: 2.0.0
     optionalDependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.11
     dev: true
 
   /jsonpointer@5.0.0:
@@ -4686,7 +4710,7 @@ packages:
   /launch-editor@2.9.1:
     resolution: {integrity: sha512-Gcnl4Bd+hRO9P9icCP/RVVT2o8SFlPXofuCxvA2SaZuH45whSvf5p8x5oih5ftLiVhEI4sp5xDY+R+b3zJBh5w==}
     dependencies:
-      picocolors: 1.0.0
+      picocolors: 1.1.1
       shell-quote: 1.8.1
     dev: true
 
@@ -6674,6 +6698,18 @@ packages:
       - vue
     dev: false
 
+  /vue-i18n@9.14.1(vue@3.2.29):
+    resolution: {integrity: sha512-xjxV0LYc1xQ8TbAVfIyZiOSS8qoU1R0YwV7V5I8I6Fd64+zvsTsdPgtylPsie3Vdt9wekeYhr+smKDeaK6RBuA==}
+    engines: {node: '>= 16'}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@intlify/core-base': 9.14.1
+      '@intlify/shared': 9.14.1
+      '@vue/devtools-api': 6.6.4
+      vue: 3.2.29
+    dev: false
+
   /vue-resizable@2.0.5(vue@3.2.29):
     resolution: {integrity: sha512-AasULoGLeg87VFS07QpoR8q+U0saSlLVBhZy5wPKBl9L7YhmHVJ5Vng8mFpfnBbF2B7SujwPRTcRooz7/ntpqA==}
     peerDependencies:
@@ -6764,7 +6800,7 @@ packages:
       compression: 1.7.4
       connect-history-api-fallback: 2.0.0
       express: 4.21.1
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.11
       html-entities: 2.5.2
       http-proxy-middleware: 2.0.7(@types/express@4.17.21)
       ipaddr.js: 2.2.0

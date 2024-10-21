@@ -1,7 +1,7 @@
 <template>
   <PropsAccordion class="area-props" :accordion="accordion">
     <div>
-      <AreaAccordionItem v-for="a in areaPath" :key="a.id" :area="a" :name="a.name" :accordion="accordion" />
+      <!-- <AreaAccordionItem v-for="a in areaPath" :key="a.id" :area="a" :name="a.name" :accordion="accordion" /> -->
 
       <!--
     <div class="area-type">{{ area.type === 'div' ? area.display : area.type }} props</div>
@@ -13,7 +13,7 @@
       <template v-if="area.display === 'grid'">
         <PropsAccordionItem
           name="explicit-grid"
-          heading="Explicit Grid"
+          heading="grid.panel.header"
           :independent="true"
           :start-opened="true"
           :accordion="accordion"
@@ -92,7 +92,7 @@
         name="children"
         :independent="true"
         :start-opened="true"
-        heading="Children"
+        heading="children.panel.header"
         :accordion="accordion"
         class="child-accordion"
       >

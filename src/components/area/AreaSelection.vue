@@ -11,7 +11,7 @@
       v-model="selection.name"
       class="area-text"
       type="text"
-      placeholder="Area Name"
+      :placeholder="$t('grid.cell.placeholder')"
       aria-label="area name"
       @keyup.enter="saveSelection"
       @keyup.left="saveSelection"
@@ -27,7 +27,7 @@
       aria-label="Save area"
       @click="saveEnabled ? saveSelection() : nameInputElement.focus()"
     >
-      save
+    {{ $t("grid.cell.saveBtn.label") }}
     </button>
   </section>
 </template>

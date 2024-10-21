@@ -19,7 +19,7 @@ import { asValidGridArea } from './utils/grid.js'
 
 function createMainAreaState() {
   return createAreaState({
-    name: 'container',
+    name: 'grid-container',
     type: 'div',
     display: 'grid',
     grid: createGridState(),

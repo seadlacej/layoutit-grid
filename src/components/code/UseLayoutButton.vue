@@ -9,11 +9,12 @@ function onSubmit(event) {
   
   event.preventDefault()
   event.preventDefault()
-  const cssCode = areaToCSS(area, options)
+  // const cssCode = areaToCSS(area, options)
+  const cssCode = presentationCSS(area)
   const htmlCode = areaToHTML(area)
   const { setHtmlCssState } = useHtmlCssState();
   setHtmlCssState(htmlCode, cssCode);
-  restart();
+  // restart();
 }
 
 </script>
@@ -22,7 +23,7 @@ function onSubmit(event) {
   <button type="button" class="use-layout-btn" @click="onSubmit">
     <IconUpload />
     <span>&nbsp;</span>
-    Layout benutzen
+    {{ $t("useLayoutBtn.label") }}
   </button>
 </template>
 

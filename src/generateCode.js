@@ -132,7 +132,7 @@ export function identString(ident) {
 function areasToHTML(area, ident = 0) {
   let html = ''
   area.children.forEach((child) => {
-    html += '\n' + identString(ident) + areaToHTML(child, ident)
+    html += '\n' + identString(ident) + areaToHTML(child, ident, ' grid-cell')
   })
   if (area.children.length > 0) {
     html += '\n' + identString(ident - 1) // ident for parent </div>
@@ -140,9 +140,9 @@ function areasToHTML(area, ident = 0) {
   return html
 }
 
-export function areaToHTML(area, ident = 0) {
+export function areaToHTML(area, ident = 0, defaultClass = '') {
   const tag = getElementTag(area)
-  return `<${tag} ${includeAreaInCSS(area) ? `class="${toCssName(area.name)}"` : ''}>${areasToHTML(
+  return `<${tag} ${includeAreaInCSS(area) ? `class="${toCssName(area.name)}${defaultClass}"` : ''}>${areasToHTML(
     area,
     ident + 1
   )}</${tag}>`
@@ -151,12 +151,10 @@ export function areaToHTML(area, ident = 0) {
 export function presentationCSS(area) {
   const cssName = toCssName(area.name)
   const needsHeight = area.height === 'auto'
-  return `html, body ${needsHeight ? `, .${cssName} ` : ''}{
+  return `.${cssName} {
   height: 100%;
   margin: 0;
 }
-
-/* For presentation only, no need to copy the code below */
 
 .${cssName} * {
   border: 1px solid red;
@@ -164,7 +162,6 @@ export function presentationCSS(area) {
 }
 
 .${cssName} *:after {
-  content:attr(class);
   position: absolute;
   top: 0;
   left: 0;

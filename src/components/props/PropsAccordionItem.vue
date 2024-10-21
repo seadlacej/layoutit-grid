@@ -1,7 +1,7 @@
 <template>
   <div class="props-accordion-item" :class="{ active: !!accordion && accordion.active === name }">
     <h1 :class="{ independent }" @click="onHeaderClick">
-      {{ (!opened && closedHeading) || heading }}
+      {{ (!opened && closedHeading) || $t(heading) }}
       <slot name="buttons"></slot>
     </h1>
     <div v-if="(independent && opened) || accordion.active === name" class="props-accordion-content">

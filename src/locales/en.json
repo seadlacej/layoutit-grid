@@ -1,0 +1,10 @@
+{
+  "columns.label": "Columns",
+  "rows.label": "Rows",
+  "add.button.label": "Add",
+  "grid.panel.header": "Grid container",
+  "children.panel.header": "Cells",
+  "grid.cell.placeholder": "Area Name",
+  "grid.cell.saveBtn.label": "Save",
+  "useLayoutBtn.label": "Use Layout"
+}
