@@ -15,20 +15,25 @@ if (!window.PointerEvent) {
 import de from './locales/de.json'
 import en from './locales/en.json'
 
-// configure i18n
-const i18n = createI18n({
-  locale: 'de',
+const defaultMessagesParams = {
+  locale: 'en',
   fallbackLocale: 'en',
   messages: { de, en },
-})
+}
 
-const app = createApp(App)
+const setMessages = (locale: string) => createI18n({ ...defaultMessagesParams, locale })
 
-// Globably register GridEditor to avoid issues with circular references
-app.component('GridEditor', GridEditor)
-app.component('FlexEditor', FlexEditor)
-app.use(i18n)
-app.mount('#grid-layout-creator')
+import type { App as VueApp } from 'vue'
+
+export function layoutGrid(locale = 'en'): VueApp {
+  const app = createApp(App) // Pass the locale as a prop to the App component
+  app.component('GridEditor', GridEditor)
+  app.use(setMessages(locale))
+  app.mount('#grid-layout-creator')
+  return app
+}
+
+layoutGrid()
 
 // EventBus.value.addEventListener('layoutStateUpdated', (event: CustomEvent) => {
 //   const { html, css } = event.detail

@@ -1,11 +1,12 @@
 {
   "name": "layoutit-grid",
-  "version": "2.1.0",
+  "version": "1.0.0",
   "license": "MIT",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "vite --open",
     "start": "vite --open",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "build-no-typing": "vite build",
     "build-serve": "npm run build && vite preview --open",
     "lint": "eslint --ext .js,.vue src",
