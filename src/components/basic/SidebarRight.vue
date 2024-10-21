@@ -32,9 +32,9 @@ function handleResize() {
     minWidth.value = 0
     width.value = 0
   } else {
-    maxWidth.value = 420
-    minWidth.value = 340
-    width.value = 375
+    maxWidth.value = 320
+    minWidth.value = 240
+    width.value = 275
   }
 }
 
@@ -46,14 +46,14 @@ handleResize()
   /*overflow: auto;*/
   text-align: left;
   color: var(--color-gray-lightest);
-  padding: 105px 15px;
+  padding: 15px 15px;
   height: 100vh;
   transition: transform 0.2s ease-in;
   position: relative;
   @media (max-width: 769px) {
     transform: translateX(100%);
     width: 100%;
-    background: var(--color-gray-darkest);
+    background: var(--color-gray-lightest);
     position: fixed;
     right: 0;
     bottom: 0;

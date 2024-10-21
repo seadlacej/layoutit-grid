@@ -176,7 +176,7 @@ function onUpdateType(type) {
 }
 
 .area-actions-sidebar h1 {
-  color: var(--color-golden);
+  color: var(--color-text-darker);
   font-size: 13px;
   text-shadow: none;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;

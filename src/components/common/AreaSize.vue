@@ -165,7 +165,7 @@ button,
     opacity: 0.5;
   }
   &.remove-button {
-    background: var(--color-remove);
+    background: var(--color-red-500);
     svg {
       stroke-width: 15px;
     }
@@ -177,16 +177,16 @@ button,
   }
   &:hover {
     opacity: 1;
-    background: var(--color-remove-active);
+    background: var(--color-red-700);
   }
 }
 
 .add-button {
   height: 30px;
   max-width: 50px;
-  background: var(--color-blue);
+  background: var(--color-turquoise-500);
   &:hover {
-    background: var(--color-add);
+    background: var(--color-turquoise-main);
   }
 }
 </style>

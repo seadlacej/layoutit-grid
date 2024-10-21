@@ -73,18 +73,18 @@ defineProps<{ area }>()
       font-weight: normal;
       font-size: 13px;
       text-shadow: none;
-      color: var(--color-golden);
+      color: var(--color-text-darker);
       font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     }
   }
   &.active {
     .area-action-buttons {
       button:hover {
-        background: rgba(var(--color-white-rgb), 0.1);
+        background: var(--color-red-700);
       }
     }
     .area-name {
-      color: var(--color-white);
+      color: var(--color-text-darker);
       &:hover {
         background: transparent;
       }
@@ -105,7 +105,7 @@ defineProps<{ area }>()
   }
   h1 {
     border-bottom: 1px solid rgba(var(--color-gray-dark-rgb), 0.5);
-    color: var(--color-golden);
+    color: var(--color-text-main);
     font-size: 13px;
     text-shadow: none;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -131,8 +131,9 @@ defineProps<{ area }>()
   display: flex;
   align-items: center;
   padding-left: 15px;
+  background-color: var(--color-white);
   &:hover {
-    background: var(--color-gray-dark);
+    background: var(--color-turquoise-50);
   }
 }
 
@@ -174,7 +175,7 @@ defineProps<{ area }>()
 button,
 .add-button,
 .remove-button {
-  background: transparent;
+  background: var(--color-red-500);
   margin: 0;
   padding: 0;
   height: auto;

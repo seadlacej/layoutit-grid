@@ -108,6 +108,10 @@ onUnmounted(() => removeEventListener('keydown', keyMonitor))
   --color-yellow-800: #94610e;
   --color-yellow-900: #794f0b;
 
+  --color-text-main: rgba(0, 0, 0, 0.54);
+  --color-text-darker: #444444;
+  --color-white-btn-hover: #d5d5d5;
+
   /* END Create Colors */
 
 

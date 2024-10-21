@@ -42,7 +42,7 @@ function onHeaderClick() {
   margin: 0;
   opacity: 1;
   transition: opacity 0.1s ease-in;
-  border-bottom: 1px dashed rgba(var(--color-gray-dark-rgb), 0.4);
+  /* border-bottom: 1px dashed rgba(var(--color-gray-dark-rgb), 0.4); */
   &:first-of-type {
     opacity: 1;
     h1:hover {
@@ -56,26 +56,27 @@ function onHeaderClick() {
   h1 {
     width: 100%;
     position: relative;
+    background-color: var(--color-turquoise-main);
     color: var(--color-gray-lightest);
     font-size: 15px;
     margin: 0;
     padding: 10px 15px;
     cursor: pointer;
     &:hover {
-      background: var(--color-black);
+      background: var(--color-turquoise-700);
     }
   }
   &.active h1 {
     border-bottom: 0;
     opacity: 1;
     &:hover {
-      background: transparent;
+      background: var(--color-turquoise-700);
     }
   }
 }
 
 .props-accordion-content {
-  margin: 0 15px 10px 15px;
+  margin: 10px 15px 10px 15px;
   &:empty {
     margin: 0;
   }

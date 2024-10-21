@@ -24,7 +24,7 @@
   @media screen and (max-width: 768px) {
     position: fixed;
     top: 0;
-    background: var(--color-gray-darkest);
+    background: var(--color-gray-lightest);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -44,7 +44,7 @@
   margin: 0 0.25rem;
   svg {
     z-index: 9;
-    fill: var(--color-white);
+    fill: var(--color-turquoise-main);
     height: 1.5rem;
     margin-top: 0.25rem;
     margin-left: 0.25rem;

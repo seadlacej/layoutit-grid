@@ -114,7 +114,7 @@ button {
     padding-top: 1px;
     border-bottom-right-radius: 2px;
     right: 0;
-    background: var(--color-remove);
+    background: var(--color-red-500);
   }
 
   &.btn-edit,

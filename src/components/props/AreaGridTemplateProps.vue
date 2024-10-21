@@ -211,7 +211,7 @@ h2 {
   display: block;
   flex: 1;
   max-width: max-content;
-  color: var(--color-blue-lightest);
+  color: var(--color-text-main);
   font-weight: normal;
   font-size: 13px;
   text-shadow: none;
@@ -239,7 +239,6 @@ h2 {
 }
 
 .items-header {
-  background-color: var(--color-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -325,7 +324,7 @@ button,
     opacity: 0.5;
   }
   &.remove-button {
-    background: var(--color-remove);
+    background: var(--color-red-500);
     svg {
       stroke-width: 15px;
     }
@@ -337,14 +336,14 @@ button,
   }
   &:hover {
     opacity: 1;
-    background: var(--color-remove-active);
+    background: var(--color-red-700);
   }
 }
 
 .add-button {
   height: 30px;
   max-width: max-content;
-  background: var(--color-blue);
+  background: var(--color-turquoise-500);
   padding: 0 12px;
   color: var(--color-white);
   font-size: 13px;
@@ -357,7 +356,7 @@ button,
     display: none;
   }
   &:hover {
-    background: var(--color-blue-dark);
+    background: var(--color-turquoise-700);
   }
   &:after {
     content: '';

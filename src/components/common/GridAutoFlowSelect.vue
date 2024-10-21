@@ -129,9 +129,9 @@ const optionTooltipsFlow = {
   &.default-value > div {
     opacity: 1;
     color: var(--color-white);
-    background: var(--color-blue);
+    background: var(--color-turquoise-500);
     &:hover {
-      background: var(--color-blue);
+      background: var(--color-turquoise-500);
     }
   }
 }
@@ -139,9 +139,9 @@ input[type='checkbox']:checked + label,
 input[type='radio']:checked + label {
   opacity: 1;
   color: var(--color-white);
-  background: var(--color-blue);
+  background: var(--color-turquoise-500);
   &:hover {
-    background: var(--color-blue);
+    background: var(--color-turquoise-500);
   }
   &.dense-label {
   }

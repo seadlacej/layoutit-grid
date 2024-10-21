@@ -210,7 +210,7 @@ defineExpose({ cellDown })
     width: 100%;
   }
   button {
-    background: var(--color-add);
+    background: var(--color-turquoise-main);
     border: 0;
     height: 30px;
     color: var(--color-white);
@@ -238,7 +238,7 @@ defineExpose({ cellDown })
       border-bottom-left-radius: 2px;
       padding: 0 10px;
       &:hover:not(.disabled) {
-        background: var(--color-add-active);
+        background: var(--color-turquoise-700);
       }
     }
     &.btn-subgrid {
@@ -255,9 +255,9 @@ defineExpose({ cellDown })
     }
     &.btn-remove {
       width: 30px;
-      background: var(--color-remove);
+      background: var(--color-red-500);
       &:hover {
-        background: var(--color-remove-active);
+        background: var(--color-red-700);
       }
       svg {
         width: 10px;

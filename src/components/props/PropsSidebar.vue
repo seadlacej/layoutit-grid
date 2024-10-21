@@ -60,7 +60,7 @@ defineProps<{ area }>()
     bottom: 0;
     top: 48px;
     width: 100%;
-    background: var(--color-gray-darkest);
+    background: var(--color-gray-lightest);
     a.brand {
       display: none;
     }
@@ -71,6 +71,11 @@ defineProps<{ area }>()
       display: none;
     }
   }
+}
+
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {

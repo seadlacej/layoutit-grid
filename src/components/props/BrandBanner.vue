@@ -1,6 +1,7 @@
 <template>
-  <div class="version-container">
-  </div>
+  <span></span>
+  <!-- <div class="version-container">
+  </div> -->
 </template>
 
 <style scoped lang="postcss">

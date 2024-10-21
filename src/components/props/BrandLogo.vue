@@ -13,8 +13,8 @@
   font-style: italic;
   font-weight: 700;
   letter-spacing: 0.02em;
-  margin: 12px 0 12px 15px;
-  color: var(--color-white);
+  margin: 12px 15px 12px 15px;
+  color: var(--color-text-darker);
   text-decoration: none;
   display: flex;
   align-items: flex-end;

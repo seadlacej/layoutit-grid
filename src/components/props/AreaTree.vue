@@ -206,7 +206,7 @@ function addArea() {
   padding-right: 0;
   cursor: pointer;
   &.current {
-    background: var(--color-blue);
+    background: var(--color-turquoise-500);
     color: var(--color-white);
     &:after {
       background: var(--color-black);
@@ -220,7 +220,7 @@ function addArea() {
     color: var(--color-blue-lightest);
     padding: 2px 4px;
     &.current {
-      background: var(--color-blue);
+      background: var(--color-turquoise-500);
       color: var(--color-white);
       &:after {
         background: var(--color-black);

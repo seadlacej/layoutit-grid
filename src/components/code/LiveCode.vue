@@ -21,12 +21,14 @@
         <IconLink />
       </SidebarButton> -->
     </div>
-    <div class="buttons">
-      <UpdateCodeButton :area="area" :options="options" />
-      <!-- <CodepenButton :area="area" :options="options" /> -->
-      <!-- <CodeSanboxButton :area="area" :options="options" />
-      <StackblitzButton :area="area" :options="options" /> -->
-    </div>
+    <!-- <div class="buttons">
+      <CodepenButton :area="area" :options="options" />
+      <CodeSanboxButton :area="area" :options="options" />
+      <StackblitzButton :area="area" :options="options" />
+    </div> -->
+  </div>
+  <div>
+    <UseLayoutButton :area="area" :options="options" />
   </div>
   <!-- <div style="height: 100%">
     <HtmlCodeEditor :area="area" :options="options" />
@@ -105,7 +107,7 @@ function getPermalink() {
 
 <style scoped lang="postcss">
 .buttons-wrapper {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   padding: 0;
 }
@@ -129,8 +131,11 @@ function getPermalink() {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     &:hover {
-      background: var(--color-gray-dark);
+      background: var(--color-white-btn-hover);
     }
     &[disabled] {
       opacity: 0.35;
@@ -138,8 +143,8 @@ function getPermalink() {
   }
   .btn-trash {
     padding: 10px;
-    background: var(--color-black);
-    border: solid 1px var(--color-gray-darkest);
+    background: var(--color-white);
+    /* border: solid 1px var(--color-turquoise-700); */
     max-width: 42px;
   }
   .btn-link {
@@ -153,8 +158,9 @@ function getPermalink() {
   .btn-history {
     padding: 10px;
     max-width: 42px;
-    background: var(--color-black);
-    border: solid 1px var(--color-gray-darkest);
+    background: var(--color-white);
+    /* border: solid 1px var(--color-purple-700); */
+    margin-right: auto;
     &:first-child {
       margin-left: 0;
       margin-right: 0;

@@ -83,17 +83,17 @@ defineEmits(['update:modelValue'])
   &.default-value > div {
     opacity: 1;
     color: var(--color-white);
-    background: var(--color-blue);
+    background: var(--color-turquoise-500);
     border-radius: 2px;
     &:hover {
-      background: var(--color-blue);
+      background: var(--color-turquoise-500);
     }
   }
 }
 input[type='radio']:checked + label {
   opacity: 1;
   color: var(--color-white);
-  background: var(--color-blue);
+  background: var(--color-turquoise-500);
   border-radius: 2px;
 }
 </style>

@@ -19,12 +19,12 @@ button {
   padding: 0.313em 9px;
   text-shadow: rgba(var(--color-black-rgb), 0.3) 0 1px 1px;
   color: var(--color-white);
-  background: var(--color-add);
+  background: var(--color-turquoise-main);
   &.active {
     background: var(--color-green);
   }
   &:hover {
-    background: var(--color-add-active);
+    background: var(--color-turquoise-700);
   }
 }
 </style>

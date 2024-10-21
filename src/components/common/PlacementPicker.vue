@@ -241,7 +241,7 @@ input[type='radio']:checked + label {
   opacity: 1;
   color: var(--color-white);
   > div {
-    background: var(--color-blue);
+    background: var(--color-turquoise-500);
   }
   svg {
     stroke: var(--color-white);

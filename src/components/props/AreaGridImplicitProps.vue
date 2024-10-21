@@ -330,7 +330,7 @@ button,
     opacity: 0.5;
   }
   &.remove-button {
-    background: var(--color-remove);
+    background: var(--color-red-500);
     svg {
       stroke-width: 15px;
     }
@@ -342,14 +342,14 @@ button,
   }
   &:hover {
     opacity: 1;
-    background: var(--color-remove-active);
+    background: var(--color-red-700);
   }
 }
 
 .add-button {
   height: 30px;
   max-width: max-content;
-  background: var(--color-blue);
+  background: var(--color-turquoise-500);
   padding: 0 12px;
   font-size: 13px;
   text-shadow: none;
@@ -362,7 +362,7 @@ button,
     display: none;
   }
   &:hover {
-    background: var(--color-blue-dark);
+    background: var(--color-turquoise-700);
   }
   &:after {
     content: '';
