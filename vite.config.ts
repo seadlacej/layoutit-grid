@@ -25,8 +25,7 @@ const LayouitPlugin = (): Plugin => {
       viteConfig = config
     },
     async buildEnd(error) {
-      if (error)
-        throw error
+      if (error) throw error
     },
     transformIndexHtml: {
       enforce: 'post',
@@ -60,7 +59,8 @@ const LayouitPlugin = (): Plugin => {
             // )
             let result = html.replace(
               module,
-              `<link rel="modulepreload" href="${moduleName}" />\n${dynamicImportsEntries ? dynamicImportsEntries.filter((dy) => !!dy).join('\n') : ''
+              `<link rel="modulepreload" href="${moduleName}" />\n${
+                dynamicImportsEntries ? dynamicImportsEntries.filter((dy) => !!dy).join('\n') : ''
               }\n${module}`
             )
             // the css will be something like this
@@ -92,8 +92,8 @@ export default defineConfig({
     vuePlugin({
       refTransform: true,
       script: {
-        propsDestructureTransform: true
-      }
+        propsDestructureTransform: true,
+      },
     }),
     Components(),
     LayouitPlugin(),
@@ -185,6 +185,23 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    lib: {
+      entry: 'src/main.ts', // Your library entry point
+      name: 'LayoutGrid', // Global name for the library
+      fileName: (format) => `main.${format}.js`, // Output file name
+      formats: ['es'], // Use ESM format for your library
+    },
+    rollupOptions: {
+      external: ['vue'], // Treat Vue as an external dependency
+      output: {
+        globals: {
+          vue: 'Vue', // Provide global variable for Vue
+        },
+      },
+    },
+    emptyOutDir: true, // Clear output directory before building
+  },
   css: {
     postcss: '.',
   },
